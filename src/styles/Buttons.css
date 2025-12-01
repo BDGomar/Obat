@@ -1,0 +1,132 @@
+/* Buttons */
+.btn-primary {
+  background: #0a0a0a;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(227, 24, 55, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-primary:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-primary:hover {
+  background: #E31837;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(227,24,55,0.3);
+}
+
+.btn-primary:hover span:last-child {
+  transform: translateX(4px);
+  transition: transform 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #0a0a0a;
+  border: 1.5px solid #e0e0e0;
+  padding: 13px 26px;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-outline:hover {
+  border-color: #0a0a0a;
+  background: #fafafa;
+}
+
+.btn-white {
+  background: #fff;
+  color: #0a0a0a;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+}
+
+.btn-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(255,255,255,0.2);
+}
+
+.btn-red {
+  background: #E31837;
+  color: white;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+}
+
+.btn-red:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(227,24,55,0.4);
+}
+
+/* Responsive Buttons */
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-outline,
+  .btn-white,
+  .btn-red {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-primary,
+  .btn-outline,
+  .btn-white,
+  .btn-red {
+    padding: 12px 20px;
+    font-size: 13px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+

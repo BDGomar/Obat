@@ -1,0 +1,102 @@
+/* CTA Section */
+.cta-section {
+  padding: 120px 0;
+  background: #0a0a0a;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-orb {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(227,24,55,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-title {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.cta-title span {
+  color: #666;
+}
+
+.cta-desc {
+  font-size: 17px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 40px;
+  max-width: 400px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.cta-or {
+  color: rgba(255,255,255,0.4);
+  font-size: 14px;
+}
+
+.cta-phone {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.03);
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.contact-label {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  color: #fff;
+  font-size: 15px;
+}
+
+.contact-item span {
+  color: rgba(255,255,255,0.4);
+  margin-right: 12px;
+}
+
+@media (max-width: 1024px) {
+  .cta-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
