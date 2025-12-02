@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Expertise.css';
 import '../styles/Buttons.css';
-import { HECIcon, StarIcon, UsersIcon, RocketIcon, LightbulbIcon, TargetIcon } from './Illustrations';
+import { HECIcon, UsersIcon, RocketIcon } from './Illustrations';
 
 const Expertise = () => {
   const features = [

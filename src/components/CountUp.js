@@ -38,13 +38,15 @@ const CountUp = ({ end, duration = 2000, suffix = '' }) => {
       { threshold: 0.5 }
     );
 
-    if (countRef.current) {
-      observerRef.current.observe(countRef.current);
+    const currentElement = countRef.current;
+    
+    if (currentElement) {
+      observerRef.current.observe(currentElement);
     }
 
     return () => {
-      if (observerRef.current && countRef.current) {
-        observerRef.current.unobserve(countRef.current);
+      if (observerRef.current && currentElement) {
+        observerRef.current.unobserve(currentElement);
       }
     };
   }, [end, duration]);

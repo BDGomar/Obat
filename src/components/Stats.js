@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import '../styles/Stats.css';
 import CountUp from './CountUp';
 import { DashboardIcon, StarIcon, CheckIcon, HECIcon } from './Illustrations';

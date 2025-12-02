@@ -17,6 +17,15 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env
+
+# Laravel backend
+backend/.env
+backend/vendor/
+backend/storage/*.key
+backend/.phpunit.result.cache
+backend/bootstrap/cache/*
+!backend/bootstrap/cache/.gitignore
 
 npm-debug.log*
 yarn-debug.log*

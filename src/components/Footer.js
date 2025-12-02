@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Footer.css';
-import { MontrealIcon, ArrowRightIcon, CheckIcon } from './Illustrations';
+import { MontrealIcon, CheckIcon } from './Illustrations';
 
 const Footer = () => {
   return (
@@ -45,9 +45,9 @@ const Footer = () => {
           <div>
             <h4 className="footer-title">LÉGAL</h4>
             <ul className="footer-links">
-              <li><a href="#">Confidentialité</a></li>
-              <li><a href="#">Conditions</a></li>
-              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#confidentialite">Confidentialité</a></li>
+              <li><a href="#conditions">Conditions</a></li>
+              <li><a href="#mentions-legales">Mentions légales</a></li>
             </ul>
           </div>
         </div>
