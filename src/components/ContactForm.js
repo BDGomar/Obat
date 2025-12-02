@@ -34,12 +34,8 @@ const ContactForm = () => {
     setSubmitStatus({ type: '', message: '' });
 
     try {
-      // Utiliser l'API de production via Nginx reverse proxy
-      // Utiliser HTTPS si la page est en HTTPS, sinon HTTP
-      const isHTTPS = window.location.protocol === 'https:';
-      const API_BASE = process.env.REACT_APP_API_URL || 
-        (isHTTPS ? 'https://13.50.248.190' : 'http://13.50.248.190');
-      const API_URL = `${API_BASE}/api/contact`;
+      // Utiliser l'API via le domaine avec certificat SSL valide
+      const API_URL = process.env.REACT_APP_API_URL || 'https://obat.digitgroup.site/api/contact';
       
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 15000); // Timeout de 15 secondes
